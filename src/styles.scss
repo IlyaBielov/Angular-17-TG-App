@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&famali=Titillium+Web&display=swap');
+
+:root {
+  --main-padding: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--tg-theme-text-color);
+  padding: var(--main-padding);
+  background-color: var(--tg-theme-bg-color);
+}
+
+a {
+  color: var(--tg-theme-link-color);
+}
+
+button {
+  background-color: var(--tg-theme-button-bg-color);
+  color: var(--tg-theme-button-text-color);
+}
+
+.mb {
+  margin-bottom: var(--main-padding);
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--tg-theme-hint-color);
+}
+
+hr {
+  margin-bottom: var(--main-padding);
+  background: var(--tg-theme-hint-color);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  height: 70vh;
+}
+
+.form-control {
+  width: 100%;
+  height: 60px;
+  background: var(--tg-theme-secondary-bg-color);
+  color: var(--tg-theme-text-color);
+  resize: none;
+  font-family: inherit;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hint {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.product-item {
+  overflow: hidden;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: var(--main-padding);
+  padding: var(--main-padding);
+  cursor: pointer;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--tg-theme-secondary-bg-color);
+}
+
+.product-image img {
+  display: block;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.pading-infon {
+  padding: var(--main-padding);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-style: italic;
+}
